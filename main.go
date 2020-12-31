@@ -10,7 +10,7 @@ func mainTest() {
   fmt.Println("Hello World!!")
   
   var flagVal string
-  flag.StringVar(&flagVal, "args")
+  flag.StringVar(&flagVal, "args", "", "a string variable")
   
   flag.Parse()
   

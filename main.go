@@ -3,9 +3,11 @@ package main
 import(
   "flag"
   "fmt"
+  "errors"
+  "log"
 )
 
-func mainTest() {
+func main() {
   var err error = nil
   fmt.Println("Hello World!!")
   
@@ -19,6 +21,8 @@ func mainTest() {
   if err != nil {
     log.Panic(err)
   }
+
+  fmt.Println("Argument:", str)
 }
 
 func testCLI(arg string) (string, error) {
